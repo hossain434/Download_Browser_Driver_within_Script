@@ -1,5 +1,5 @@
 package downloadBrowserDriver;
-
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeSuite;
@@ -10,7 +10,8 @@ public class AppTest {
 
 	@BeforeSuite
 	public void setupDrivers() {
-		BrowsersDrivers.setupChrome();
+ // To declare and initialize HtmlUnitDriver
+ WebDriver driver = new HtmlUnitDriver();
 	}
 
 	@Test
