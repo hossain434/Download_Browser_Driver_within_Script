@@ -16,6 +16,11 @@
     </plugins>
   </build>
   <dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>htmlunit-driver</artifactId>
+        <version>2.21</version>
+</dependency>
   <dependency>
    <groupId>org.arquillian.spacelift</groupId>
    <artifactId>arquillian-spacelift</artifactId>
