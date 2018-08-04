@@ -8,16 +8,11 @@ import org.testng.annotations.Test;
 public class AppTest {
 	private WebDriver driver;
 
-	@BeforeSuite
-	public void setupDrivers() {
- // To declare and initialize HtmlUnitDriver
- WebDriver driver = new HtmlUnitDriver();
-	}
-
 	@Test
 	public void test() {
-		driver = new ChromeDriver();
+		 WebDriver driver = new HtmlUnitDriver();
 		driver.get("http://www.google.com");
+		System.out.println("Google opened");
 	}
 
 }
